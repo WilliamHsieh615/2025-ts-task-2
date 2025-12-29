@@ -13,13 +13,13 @@
 
 // TODO: 匯入型別定義
 // 提示：需要匯入 CreateProductParams, CreateProductResponse 等型別
-import type { DeleteOrderResponse } from '@/types/order'
 import type {
   CreateProductParams,
   CreateProductResponse,
   EditProductParams,
   EditProductResponse,
   GetProductsResponse,
+  DeleteProductResponse,
   UploadImageResponse,
 } from '@/types/product'
 import axios from 'axios'
@@ -94,7 +94,7 @@ export const apiEditProduct = (params: EditProductParams): Promise<AxiosResponse
 // 提示：
 // - 參數 productId 是字串型別
 // - 回傳值是 Promise<AxiosResponse<DeleteOrderResponse>>
-export const apiDeleteProduct = (productId: string): Promise<AxiosResponse<DeleteOrderResponse>> =>
+export const apiDeleteProduct = (productId: string): Promise<AxiosResponse<DeleteProductResponse>> =>
   productApi.delete(`/v2/api/${API_PATH}/admin/product/${productId}`)
 
 // TODO: 為 apiUploadImage 函式加上型別註解

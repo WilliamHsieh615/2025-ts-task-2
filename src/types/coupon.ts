@@ -1,20 +1,20 @@
 // 優惠券基本型別
 export type CouponData = {
   id: string
-  "title": string,
-  "is_enabled": number,
-  "percent": number,
-  "due_date": number,
-  "code": string
+  title: string,
+  is_enabled: number,
+  percent: number,
+  due_date: number,
+  code: string
 }
 
 // 建立優惠券參數型別
 export type CreateCouponParams = {
-  "title": string,
-  "is_enabled": number,
-  "percent": number,
-  "due_date": number,
-  "code": string
+  title: string,
+  is_enabled: number,
+  percent: number,
+  due_date: number,
+  code: string
 }
 
 // 編輯優惠券參數型別
@@ -22,11 +22,11 @@ export type EditCouponParams = {
   id: string
   // 在這裡加上其他型別定義
   data: {
-    "title": string,
-    "is_enabled": number,
-    "percent": number,
-    "due_date": number,
-    "code": string
+    title: string,
+    is_enabled: number,
+    percent: number,
+    due_date: number,
+    code: string
   }
 }
 
